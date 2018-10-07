@@ -34,7 +34,5 @@ For Inference use the Inference.py
 The predicted result after 20000 iterations:
 ![](Result.jpg)
 
-## Future Work
- 1) Run for more number of iterations
- 2) Increase the batch size which is currently limited by available gpu memory size. 
+
 
