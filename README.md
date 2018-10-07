@@ -19,10 +19,10 @@ Finally divided the data set into training,validation and test set. 10% of the d
 
 #### Training Model
 For training use the TRAIN.py
-1) Set folder path of the training images in TRAIN_Image_Dir
-2) Set folder path for the ground truth labels in TRAIN_Label_Dir
-3)Download a pretrained [vgg16] (ftp://mi.eng.cam.ac.uk/pub/mttt2/models/vgg16.npy) model and put it in the Model folder
-4) Set the number of class in NUM_CLASS which is 2 in this case
+1) Set folder path of the training images in TRAIN_Image_Dir.
+2) Set folder path for the ground truth labels in TRAIN_Label_Dir.
+3) Download a pretrained [vgg16] (ftp://mi.eng.cam.ac.uk/pub/mttt2/models/vgg16.npy) model and put it in the Model folder.
+4) Set the number of class in NUM_CLASS which is 2 in this case.
 5) Also set the batchsize to 4.
 
 For Inference use the Inference.py
