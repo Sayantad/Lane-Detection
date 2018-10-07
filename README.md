@@ -31,4 +31,4 @@ For Inference use the Inference.py
 
 #### Predicted Result
 The predicte result after 20000 iterations
-![] (/Result.jpg)
+![] (Result.jpg)
