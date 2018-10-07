@@ -1,21 +1,21 @@
 # Lane-Detection
-Automatic detection of lanes can be solved by the deep learning based semantic segmentation .Semantic segmentation achieves fine-graned inference by labels for every pixel, so that each pixel is labeled with the class of its enclosing object or region. So, the lane marks in an image can be label with a specific pixel colors which is assigned to the class of the lane marks. The net used is based on fully convolutional neural net described in the paper [Fully Convolutional Networks for Semantic Segmentation](https://arxiv.org/pdf/1605.06211.pdf). The code is based on implementation of [FCN Implementation] (https://github.com/sagieppel/Fully-convolutional-neural-network-FCN-for-semantic-segmentation-Tensorflow-implementation).
+Automatic detection of lane marks can be solved by the deep learning based semantic segmentation algorithms.Semantic segmentation achieves fine-graned inference by labels for every pixel, so that each pixel is labeled with the class of its enclosing object or region. So using semantic segmemtation, the lane marks in an image can be label with a specific color which is assigned to the class of the lane marks. The net used is based on fully convolutional neural net described in the paper [Fully Convolutional Networks for Semantic Segmentation](https://arxiv.org/pdf/1605.06211.pdf). The code is based on implementation of [FCN Implementation] (https://github.com/sagieppel/Fully-convolutional-neural-network-FCN-for-semantic-segmentation-Tensorflow-implementation).
 
 
-## Requirements
+## Development Setup
 This network was run with Python 3.6  Anaconda package and Tensorflow > 1.1. The training was done using 8 GB Nvidia Quadro P4000, on Windows 10.
 
 ## Training
 #### Data Preparation
-Use the preprocessing/check_dataset.py for checking the jpeg images and labels and manually remove the corroupt image from the data set.
+Use the preprocessing/check_dataset.py for checking the jpeg images and labels.Manually remove the corroupt image from the data set.
 
-For further preprocessing each images are check manually for improper labelling and removed are from the dataset.
+For further preprocessing each images are check manually for improper labelling and are removed from the dataset.
 
-Use the preprocessing/preprocesing.py for downsampling of images to 640 x360. Before down sampling it will also add gaussion blur to remove noise to imput images.This will convert label images to 8bit png images with same name as corresponding images.
+Use the preprocessing/preprocesing.py for downsampling of images to 640 x360 size. Before down sampling it will also add gaussion blur to remove noise.This will convert  the label images to 8bit png images with same name as the corresponding images.
 
 The label images use 255 to represent the lane field and 0 for the background.
 
-Finaly divied the data set into training,validation and test set. 10% of dataset is used for validation set, 5% for test set and rest for trainging.
+Finaly divied the data set into training,validation and test set. 10% of dataset is used for validation set, 5% for test set and rest for trainging. Each training, validation and test folder should have JPEGImages and Labels folder.
 
 #### Training Model
 For training use the TRAIN.py
@@ -31,8 +31,8 @@ For Inference use the Inference.py
 3) Set the number of class in NUM_CLASSES
 
 #### Predicted Result
-The predicte result after 20000 iterations
+The predicted result after 20000 iterations:
 ![](Result.jpg)
 
 ## Future Work
- Future work is involved in increaseing the iou above 0.5.
+ Future work involves in increaseing the iou above 0.5.
