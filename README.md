@@ -9,7 +9,8 @@ This network was run with Python 3.6  Anaconda package and Tensorflow > 1.1. The
 #### Data Preparation
 Use the preprocessing/check_dataset.py for checking the jpeg images and labels and manually remove the corroupt image from the data set.
 
-Remove some images and labels from the dataset whic
+For further preprocessing each images are check manually for improper labelling and removed are from the dataset.
+
 Use the preprocessing/preprocesing.py for downsampling of images to 640 x360. Before down sampling it will also add gaussion blur to remove noise to imput images.This will convert label images to 8bit png images with same name as corresponding images.
 
 The label images use 255 to represent the lane field and 0 for the background.
