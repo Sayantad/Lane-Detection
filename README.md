@@ -1,9 +1,9 @@
 # Lane-Detection
-Lane Detector based on Deep learning
+Automatic detection of lanes can be solved by the deep learning based semantic segmentation .Semantic segmentation achieves fine-graned inference by labels for every pixel, so that each pixel is labeled with the class of its enclosing object or region. So, the lane marks in an image can be label with a specific pixel colors which is assigned to the class of the lane marks. The net used is based on fully convolutional neural net described in the paper [Fully Convolutional Networks for Semantic Segmentation](https://arxiv.org/pdf/1605.06211.pdf). The code is based on implementation of [FCN Implementation] (https://github.com/sagieppel/Fully-convolutional-neural-network-FCN-for-semantic-segmentation-Tensorflow-implementation).
 
 
 ## Requirements
-This network was run with Python 3.6  Anaconda package and Tensorflow > 1.1. The training was done using Nvidia Quadro P4000, on Windows 10.
+This network was run with Python 3.6  Anaconda package and Tensorflow > 1.1. The training was done using 8 GB Nvidia Quadro P4000, on Windows 10.
 
 ## Training
 #### Data Preparation
@@ -33,3 +33,6 @@ For Inference use the Inference.py
 #### Predicted Result
 The predicte result after 20000 iterations
 ![](Result.jpg)
+
+## Future Work
+ Future work is involved in increaseing the iou above 0.5.
