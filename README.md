@@ -11,7 +11,7 @@ Use the preprocessing/check_dataset.py for checking the jpeg images and labels.M
 
 For further preprocessing each images are check manually for improper labelling and are removed from the dataset.
 
-Use the preprocessing/preprocesing.py for downsampling of images to 640 x360 size. Before down sampling it will also add gaussion blur to remove noise.This will convert  the label images to 8bit png images with same name as the corresponding images.
+Use the preprocessing/preprocesing.py for downsampling of images to 640 x360 size to fit the training data on availbale gpu. Before down sampling it will also add gaussion blur to remove noise.This will convert  the label images to 8bit png images with same name as the corresponding images.
 
 The label images use 255 to represent the lane field and 0 for the background.
 
@@ -35,4 +35,6 @@ The predicted result after 20000 iterations:
 ![](Result.jpg)
 
 ## Future Work
- Future work involves in increaseing the iou above 0.5.
+ 1) Run for more number of iterations
+ 2) Increase batchize which is currently limited by available gpu memory size. 
+ 3) Increase the IOU value above 0.5.
